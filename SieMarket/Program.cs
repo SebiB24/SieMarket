@@ -31,3 +31,10 @@ Console.WriteLine("------ Biggest Spender ------");
 
 MarketService marketService = new MarketService(orders);
 Console.WriteLine($"Biggest spender: {marketService.GetBiggestSpender()}");
+
+Console.WriteLine("------ Most Popular Items ------");
+var popularItems = marketService.GetMostPopularItems(3);
+foreach (var item in popularItems)
+{
+    Console.WriteLine($"{item.Key}: {item.Value}");
+}

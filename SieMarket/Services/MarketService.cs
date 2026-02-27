@@ -33,5 +33,15 @@ namespace SieMarket.Services
                 .FirstOrDefault()?.customerName ?? "No customers found.";
         }
 
+        public Dictionary<string, int> GetMostPopularItems(int count)
+        {
+            return orders.SelectMany(order => order.items)
+                .GroupBy(item => item.itemName)
+                .Select(group => new { ItemName = group.Key, Quantity = group.Sum(item => item.itemQuantity) })
+                .OrderByDescending(x => x.Quantity)
+                .Take(count)
+                .ToDictionary(x => x.ItemName, x => x.Quantity);
+        }
+
     }
 }
