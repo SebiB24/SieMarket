@@ -1,0 +1,14 @@
+C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\bin\Debug\net10.0\SieMarket.exe
+C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\bin\Debug\net10.0\SieMarket.deps.json
+C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\bin\Debug\net10.0\SieMarket.runtimeconfig.json
+C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\bin\Debug\net10.0\SieMarket.dll
+C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\bin\Debug\net10.0\SieMarket.pdb
+C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\obj\Debug\net10.0\SieMarket.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\obj\Debug\net10.0\SieMarket.AssemblyInfoInputs.cache
+C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\obj\Debug\net10.0\SieMarket.AssemblyInfo.cs
+C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\obj\Debug\net10.0\SieMarket.csproj.CoreCompileInputs.cache
+C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\obj\Debug\net10.0\SieMarket.dll
+C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\obj\Debug\net10.0\refint\SieMarket.dll
+C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\obj\Debug\net10.0\SieMarket.pdb
+C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\obj\Debug\net10.0\SieMarket.genruntimeconfig.cache
+C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\obj\Debug\net10.0\ref\SieMarket.dll
