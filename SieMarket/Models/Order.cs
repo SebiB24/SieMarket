@@ -1,4 +1,4 @@
-namespace SieMarket.Model
+namespace SieMarket.Models
 {
     public class Order
     {
@@ -13,6 +13,11 @@ namespace SieMarket.Model
         public Order(string customerName)
         {
             this.customerName = customerName;
+        }
+
+        public void AddItem(OrderItem item)
+        {
+            items.Add(item);
         }
 
         public decimal GetTotalPrice()

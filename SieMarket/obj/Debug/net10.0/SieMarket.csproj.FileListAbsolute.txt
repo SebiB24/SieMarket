@@ -12,3 +12,4 @@ C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\obj\Debug\net
 C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\obj\Debug\net10.0\SieMarket.pdb
 C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\obj\Debug\net10.0\SieMarket.genruntimeconfig.cache
 C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\obj\Debug\net10.0\ref\SieMarket.dll
+C:\Users\sebyc\Desktop\Internship_work\Siemens\SieMarket\SieMarket\obj\Debug\net10.0\SieMarket.sourcelink.json

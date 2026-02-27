@@ -1,8 +1,19 @@
-namespace SieMarket.Service
+using SieMarket.Models;
+
+namespace SieMarket.Services
 {
     public class MarketService
     {
         private List<Order> orders = new List<Order>();
+
+        public MarketService()
+        {
+        }
+
+        public MarketService(List<Order> orders)
+        {
+            this.orders = orders;
+        }
 
         public void AddOrder(Order order)
         {
@@ -17,9 +28,10 @@ namespace SieMarket.Service
             }
 
             return orders.GroupBy(order => order.customerName)
-                .Select(group => new { CustomerName = group.Key, TotalSpent = group.Sum(order => order.GetTotalPrice()) })
+                .Select(group => new { customerName = group.Key, TotalSpent = group.Sum(order => order.GetTotalPrice()) })
                 .OrderByDescending(x => x.TotalSpent)
-                .FirstOrDefault();
+                .FirstOrDefault()?.customerName ?? "No customers found.";
         }
+
     }
 }

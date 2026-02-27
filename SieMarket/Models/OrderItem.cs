@@ -1,4 +1,4 @@
-namespace SieMarket.Model
+namespace SieMarket.Models
 {
     public class OrderItem
     {
