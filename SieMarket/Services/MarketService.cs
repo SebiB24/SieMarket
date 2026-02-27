@@ -4,7 +4,7 @@ namespace SieMarket.Services
 {
     public class MarketService
     {
-        private List<Order> orders = new List<Order>();
+        private List<Order> Orders = new List<Order>();
 
         public MarketService()
         {
@@ -12,22 +12,22 @@ namespace SieMarket.Services
 
         public MarketService(List<Order> orders)
         {
-            this.orders = orders;
+            this.Orders = orders;
         }
 
         public void AddOrder(Order order)
         {
-            orders.Add(order);
+            Orders.Add(order);
         }
 
         public string GetBiggestSpender()
         {
-            if (orders.Count == 0)
+            if (Orders.Count == 0)
             {
                 return "No orders available.";
             }
 
-            return orders.GroupBy(order => order.customerName)
+            return Orders.GroupBy(order => order.CustomerName)
                 .Select(group => new { customerName = group.Key, TotalSpent = group.Sum(order => order.GetTotalPrice()) })
                 .OrderByDescending(x => x.TotalSpent)
                 .FirstOrDefault()?.customerName ?? "No customers found.";
@@ -35,9 +35,9 @@ namespace SieMarket.Services
 
         public Dictionary<string, int> GetMostPopularItems(int count)
         {
-            return orders.SelectMany(order => order.items)
-                .GroupBy(item => item.itemName)
-                .Select(group => new { ItemName = group.Key, Quantity = group.Sum(item => item.itemQuantity) })
+            return Orders.SelectMany(order => order.Items)
+                .GroupBy(item => item.ItemName)
+                .Select(group => new { ItemName = group.Key, Quantity = group.Sum(item => item.ItemQuantity) })
                 .OrderByDescending(x => x.Quantity)
                 .Take(count)
                 .ToDictionary(x => x.ItemName, x => x.Quantity);
